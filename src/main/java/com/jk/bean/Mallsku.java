@@ -19,9 +19,12 @@ public class Mallsku {
     private String sku_mch;   //sku名字
     private Integer sku_xl;   //销量
     private String kcdz;  //库存地址
-
-    private String statusdate;
-    private String enddate;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GTM+8")
+    private Date statusdate;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GTM+8")
+    private Date enddate;
 
 
 }

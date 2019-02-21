@@ -15,7 +15,7 @@ import org.elasticsearch.client.RestHighLevelClient;
  */
 public class RestClientFactory {
 
-    private static final String HOST = "127.0.0.1";
+    private static final String HOST = "127.0.0.1"; //192.168.1.147
     private static final int PORT = 9200;
     private static final String SCHEMA = "http";//TCP 9300
     private static final int CONNECT_TIME_OUT = 1000;
